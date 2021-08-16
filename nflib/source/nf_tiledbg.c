@@ -343,6 +343,7 @@ void NF_LoadTiledBgFromSource(const char* img, u16 img_length, const char* map, 
         NF_Error(102, NULL, NF_TILEDBG[slot].palsize);
     }
     // Lee el archivo y ponlo en la RAM
+	NF_BUFFER_BGPAL[slot] = pal;
 
 	// Guarda el nombre del Fondo
 	sprintf(NF_TILEDBG[slot].name, "%s", name);
